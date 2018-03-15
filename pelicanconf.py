@@ -12,6 +12,25 @@ TIMEZONE = 'America/Los_Angeles'
 
 DEFAULT_LANG = 'en'
 
+DISPLAY_CATEGORIES_ON_MENU = False
+
+# MENUITEMS = (
+# #    ('About', ''),
+#     ('Contact', 'https://docs.google.com/forms/d/e/1FAIpQLSd_67Y_w4mvfDw3KQQEJJygHSumOYqH-eiByDI-xUStsw0T1Q/viewform?usp=sf_link'),
+# #    ('CV', ''),
+#     ('GitHub', 'https://github.com/gauravmodi/')
+#     )
+
+# Theme & Style
+TYPOGRIFY = True
+THEME = "../pelican-themes/pelican-bootstrap3"
+BOOTSTRAP_THEME = 'cosmo'
+HIDE_SIDEBAR = True
+JINJA_ENVIRONMENT = {'extensions': ['jinja2.ext.i18n']}
+# plugins configuration
+PLUGIN_PATHS = ['../pelican-plugins']
+PLUGINS = ['i18n_subsites',]
+
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None
 CATEGORY_FEED_ATOM = None
@@ -33,3 +52,7 @@ DEFAULT_PAGINATION = 10
 
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
+
+# Delete output folder content except git files
+DELETE_OUTPUT_DIRECTORY = True
+OUTPUT_RETENTION = [".hg", ".git", ".bzr", "CNAME"]

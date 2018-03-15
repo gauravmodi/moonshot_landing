@@ -10,7 +10,7 @@ import sys
 sys.path.append(os.curdir)
 from pelicanconf import *
 
-SITEURL = 'https://gauravmodi.github.io/moonshoot_landing'
+SITEURL = 'https://gauravmodi.github.io/moonshot_landing'
 # THEME = "themes/pelican-bootstrap3"
 RELATIVE_URLS = False
 
